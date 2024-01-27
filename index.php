@@ -424,7 +424,7 @@ for($i = 0; $i <= $count; $i++){
 
 <!-- task 5 -->
 <!-- while loops  -->
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -453,4 +453,23 @@ $running = true;
      }
  }
 
-?>
+?> -->
+
+<!-- task 6 -->	    
+<!-- arrays and for each loop in php -->
+<?php
+echo "<br>";
+$names = array("John", "Jane", "Doe");
+echo $names[0];
+echo "<br>";
+$john= $names[0];
+array_push($names, "Smith");
+array_pop($names);
+array_shift($names);
+$names= array_reverse($names);
+echo count($names);
+
+foreach($names as $name){
+    echo $name;
+    echo "<br>";
+}

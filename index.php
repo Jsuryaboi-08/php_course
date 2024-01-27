@@ -457,19 +457,121 @@ $running = true;
 
 <!-- task 6 -->	    
 <!-- arrays and for each loop in php -->
+<!-- //<?php
+// echo "<br>";
+// $names = array("John", "Jane", "Doe");
+// echo $names[0];
+// echo "<br>";
+// $john= $names[0];
+// array_push($names, "Smith");
+// array_pop($names);
+// array_shift($names);
+// $names= array_reverse($names);
+// echo count($names);
+
+// foreach($names as $name){
+//     echo $name;
+//     echo "<br>";
+// } -->
+// associative arrays
+// <?php
+// $capitals = array("France" => "Paris", 
+//                   "Germany" => "Berlin",
+//                   "Italy" => "Rome");
+
+//                   foreach($capitals as $key => $value){
+//                       echo "the capital of {$key} is {$value}";
+//                       echo "<br>";
+//                   }
+// $capitals["England"] = "London";
+// $capitals["Spain"] = "Paris";
+// array_pop($capitals);
+// array_push($capitals, "Paris");
+// $keys = array_keys($capitals);
+// $values = array_values($capitals);
+// $capitals = array_reverse($capitals);
+// $capitals = array_flip($capitals);
+// $capitals = array_change_key_case($capitals, CASE_UPPER);
+// $capitals = array_change_key_case($capitals, CASE_LOWER);
+// echo "<br>";
+// echo "{$capitals}";?>
+
+//
+
+
+<!-- task 7 -->
+<!-- create a form and get the input as capitals and printout the capitals -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>associative arryas example</title>
+    <form action="index.php" method="post">
+        Country: <input type="text" name="country">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</head>
+<body>
+    
+</body>
+</html>
 <?php
 echo "<br>";
-$names = array("John", "Jane", "Doe");
-echo $names[0];
-echo "<br>";
-$john= $names[0];
-array_push($names, "Smith");
-array_pop($names);
-array_shift($names);
-$names= array_reverse($names);
-echo count($names);
+$capitals = array("France" => "Paris", 
+                  "Germany" => "Berlin",
+                  "Italy" => "Rome",
+                   "India" => "New Delhi");
 
-foreach($names as $name){
-    echo $name;
-    echo "<br>";
+$country = $_POST['country'];
+echo "the capital of {$country} is {$capitals[$country]}";
+echo "<br>";
+?> -->
+
+<!-- isset() and empty() -->
+<!-- isset() = returns True if a variable is declared and not null
+      empty() = Returns TRUE if a variable is not decalred, flase, null -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isset and empty </title>
+    <form action="index.php", method = "post">
+        username: <input type="text" name="username">
+        <br>
+        password: <input type="password" name="password">
+        <br>
+        <input type="submit" name="login "value="login">
+    </form>
+</head>
+<body>
+</body>
+</html>
+<?php
+echo "<br>";
+$username = $_POST['username'];
+$password = $_POST['password'];
+$submitted = $_POST['login'];
+if(isset($submitted)){
+    echo "You have tried to login";
+    if(empty($username) || empty($password)){
+        echo "You have not filled in all the fields";
+    } else {
+        echo "<br>";
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $submitted = $_POST['login'];
+        if(isset($submitted)){
+            echo "You have tried to login";
+            if(empty($username) || empty($password)){
+                echo "You have not filled in all the fields";
+            } else {
+                 echo "You have filled in all the fields";
+            }
+        }
+    }
 }
+ ?>

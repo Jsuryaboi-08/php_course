@@ -452,3 +452,5 @@ $running = true;
          $running = false;
      }
  }
+
+?>

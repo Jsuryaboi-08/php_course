@@ -533,7 +533,7 @@ echo "<br>";
 <!-- isset() and empty() -->
 <!-- isset() = returns True if a variable is declared and not null
       empty() = Returns TRUE if a variable is not decalred, flase, null -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -573,5 +573,49 @@ if(isset($submitted)){
             }
         }
     }
+}
+?> -->`
+
+<!-- radio buttons -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio buttons</title>
+    visa: <input type="radio" name="card" value="visa">
+    <br>
+    mastercard: <input type="radio" name="card" value="mastercard">
+    <br>
+    american express: <input type="radio" name="card" value="american express">
+    <br>
+    <input type="submit" name= "submit" value="confirm">
+</head>
+<body>
+</body>
+</html>
+
+
+
+<?php
+echo "<br>";
+$card = null;
+if(isset($post['submit'])){
+    if(isset($_POST['card'])){
+    $card = $_POST['card'];
+    
+    }elseif($card == "visa"){
+        echo "you have selected visa";
+    }elseif($card == "mastercard"){
+        echo "you have selected mastercard";
+    }elseif($card == "american express"){
+        echo "you have selected american express";
+    }else{ echo "you have not selected a card";
+    }
+
+
+
+
+
 }
 ?>

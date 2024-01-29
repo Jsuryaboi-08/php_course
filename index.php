@@ -687,4 +687,130 @@ if(isset($_POST['submit'])){
 // echo "<br>";
 // ?>
 
+<!-- String functions -->
 
+<!-- <!-- <?php
+echo "<br>";
+$username = "Jeya surya";
+$phone_number = "12345-67890";
+
+$username = strtoupper($username);
+$username = strtolower($username);
+$username = trim($username);
+$username = str_pad($username,20,"0");
+$phone = str_replace("-","",$phone_number);
+$username = strrev($username);
+$username = str_shuffle($username);
+$username = substr($username, 0, 5);
+$username = str_repeat($username, 5);
+$count = strlen($phone_number);
+//$index = strpos($phone_number, "-"); -->
+//$explode and implode functions
+ //$phone_number = explode("-", $phone_number);
+//$phone_number = implode("-", $phone_number);
+
+echo $username;
+
+echo "<br>";
+ echo $phone_number;
+echo "<br>";
+?> -->
+
+
+<!-- sanitizing / validating the input -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sanitizing / validating the input</title>
+    <form action="index.php" method="post">
+        username: <input type="text" name="username">
+        <br>
+        Age: <input type="number" name="age">
+        <br>
+        Email : <input type="email" name="email">
+        <input type="submit" name="login" value="login">
+</head>
+<body>
+    
+</body>
+</html>
+
+<?php
+echo "<br>";
+ if(isset($_POST["login"])){
+    $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
+    $age = filter_input(INPUT_POST, "age", FILTER_SANITIZE_NUMBER_INT);
+    $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+    echo    $username;
+    echo "<br>";
+    echo    $age;
+    echo "<br>";
+    echo    $email;
+    echo "<br>";
+ }
+
+ ?> -->
+
+ <!-- validating user input -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validating user input</title>
+    <form action="index.php" method="post">
+        username: <input type="text" name="username">
+        <br>
+        Age: <input type="number" name="age">
+        <br>
+        Email : <input type="email" name="email">
+        <input type="submit" name="login" value="login">
+</head>
+<body>
+    
+</body>
+</html>
+
+<?php
+echo "<br>";
+ if(isset($_POST["login"])){
+    $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
+    if(empty($username)){
+        echo "you have not entered a username";
+    }
+    $age = filter_input(INPUT_POST, "age", FILTER_SANITIZE_NUMBER_INT);
+    if(empty($age)){
+        echo "you have not entered a age";
+    }
+    $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+    if(empty($email)){
+        echo "you have not entered a email";
+    }
+    echo    $username;
+    echo "<br>";
+    echo    $age;
+    echo "<br>";
+    echo    $email;
+    echo "<br>";
+ }
+
+ ?> -->
+
+
+<!-- include function -->
+
+<!-- include()= copies the content of a file(php/html/text)
+           and includes it in our php file.
+           sections of the website become reusable
+           changes need to be made in one place only
+        on another file -->
+
+
+
+
+<?php
+
+?>

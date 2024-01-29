@@ -577,7 +577,7 @@ if(isset($submitted)){
 ?> -->`
 
 <!-- radio buttons -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -618,4 +618,73 @@ if(isset($post['submit'])){
 
 
 }
-?>
+?> -->
+
+<!-- checkboxes -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkboxes</title>
+    Pizza: <input type="checkbox" name="pizza" value="pizza">
+    <br>
+    Burger: <input type="checkbox" name="burger" value="burger">
+    <br>
+    Fries: <input type="checkbox" name="fries" value="fries">
+    <br>
+    <input type="submit" name="submit" value="confirm">
+
+</head>
+<body>
+</body>
+</html>
+
+<?php
+echo "<br>";
+if(isset($_POST['submit'])){
+    if(isset($_POST['pizza'])){
+        echo "you have selected pizza";
+    }
+    if(isset($_POST['burger'])){
+        echo "you have selected burger";
+    }
+    if(isset($_POST['fries'])){
+        echo "you have selected fries";
+    }
+    if(empty($_POST['pizza']) && empty($_POST['burger']) && empty($_POST['fries'])){
+        echo "you have not selected anything";
+    }
+}
+?> -->
+
+
+
+<!-- functions in php -->
+<!-- <?php
+// echo "<br>";
+// function happy_birthday($age, $name){
+//     echo "happy birthday to {$name}";
+//     echo "<br>";
+//     echo "you are now {$age} years old";
+// }
+
+// happy_birthday(21, "surya");
+// ?> -->
+
+// <!-- task 8 -->
+// <!-- creating a function to find the hypotenuse of a triangle -->
+
+// <?php
+// echo "<br>";
+// function hypotenuse($a, $b){
+//     $c = sqrt(pow($a, 2) + pow($b, 2));
+//     return $c;
+// }
+
+// echo hypotenuse(3,4);
+// echo "<br>";
+// ?>
+
+

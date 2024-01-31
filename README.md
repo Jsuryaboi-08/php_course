@@ -1,3 +1,2 @@
-This is a php course completed by me in  a week of time.
+PHP Documentation.
 
-contains various concepts which i learnt.

@@ -1,5 +1,5 @@
 <?php
-include("header.html");
+    include ("header.html");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,11 +9,11 @@ include("header.html");
     <title>Document</title>
 </head>
 <body>
-    This is the home page of the website. <br>
+    This is the Locations page of the website. <br>
 
     
 </body>
 </html>
 <?php
-include("footer.html");
+    include ("footer.html");
 ?>
